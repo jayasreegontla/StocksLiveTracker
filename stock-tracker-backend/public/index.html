@@ -1,0 +1,17 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stocks Live Tracker</title>
+</head>
+<body>
+  <h1>Stocks Live Tracker</h1>
+  <label for="stockCount">Enter the number of stocks (not more than 20): </label>
+  <input type="number" id="stockCount" min="1" max="20" />
+  <button onclick="fetchStocks()">Fetch Stocks</button>
+  <ul id="stockList"></ul>
+  <script src="websocket.js"></script>
+</body>
+</html>
